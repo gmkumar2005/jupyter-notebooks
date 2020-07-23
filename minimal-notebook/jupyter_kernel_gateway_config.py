@@ -1,7 +1,7 @@
 import os
 
 c.KernelGatewayApp.ip = '*'
-c.KernelGatewayApp.port = 8080
+c.KernelGatewayApp.port = 8888
 
 c.KernelGatewayApp.env_process_whitelist = [
     'LD_LIBRARY_PATH',
