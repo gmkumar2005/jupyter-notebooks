@@ -38,8 +38,7 @@
                 "source": {
                     "type": "Git",
                     "git": {
-                        "uri": "https://github.com/gmkumar2005/jupyter-notebooks.git",
-                        "ref": "2.5.1"
+                        "uri": "https://github.com/gmkumar2005/jupyter-notebooks.git"
                     },
                     "contextDir": "minimal-notebook"
                 },
@@ -87,8 +86,7 @@
                 "source": {
                     "type": "Git",
                     "git": {
-                        "uri": "https://github.com/gmkumar2005/jupyter-notebooks.git",
-                        "ref": "2.5.1"
+                        "uri": "https://github.com/gmkumar2005/jupyter-notebooks.git"
                     },
                     "contextDir": "minimal-notebook"
                 },
