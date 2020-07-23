@@ -38,7 +38,7 @@
                 "source": {
                     "type": "Git",
                     "git": {
-                        "uri": "https://github.com/jupyter-on-openshift/jupyter-notebooks",
+                        "uri": "https://github.com/gmkumar2005/jupyter-notebooks.git",
                         "ref": "2.5.1"
                     },
                     "contextDir": "scipy-notebook"
