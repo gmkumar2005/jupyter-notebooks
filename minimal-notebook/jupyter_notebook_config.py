@@ -1,6 +1,6 @@
 import os
 
-port = int(os.environ.get('JUPYTER_NOTEBOOK_PORT', '8080'))
+port = int(os.environ.get('JUPYTER_NOTEBOOK_PORT', '8888'))
 
 c.NotebookApp.ip = '0.0.0.0'
 c.NotebookApp.port = port
