@@ -11,7 +11,9 @@ RUN rm -rf /tmp/src/.git* && \
     rm -rf /tmp/scripts && \
     mv /tmp/src/.s2i/bin /tmp/scripts
 RUN chown -R root /opt/app-root/src 
-USER 1001
+RUN useradd -m jovyan
+RUN chown -R jovyan /home/jovyan
+USER jovyan
 
 LABEL io.k8s.description="S2I builder for custom Jupyter notebooks." \
       io.k8s.display-name="Jupyter Notebook" \
