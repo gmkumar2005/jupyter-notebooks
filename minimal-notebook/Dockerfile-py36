@@ -20,5 +20,6 @@ LABEL io.k8s.description="S2I builder for custom Jupyter notebooks." \
       io.openshift.s2i.scripts-url="image:///opt/app-root/builder"
 
 RUN /tmp/scripts/assemble
-
+RUN chown -R root /opt/app-root/src 
+RUN chgrp  -R root /opt/app-root/src 
 CMD [ "/opt/app-root/builder/run" ]
