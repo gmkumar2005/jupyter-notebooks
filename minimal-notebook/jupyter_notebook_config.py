@@ -10,7 +10,7 @@ c.NotebookApp.allow_origin='*'
 c.NotebookApp.password=''
 c.NotebookApp.notebook_dir='/home/jovyan'
 c.NotebookApp.token=''     
-
+c.NotebookApp.allow_root=True
 
 if os.environ.get('NB_PREFIX'):
     c.NotebookApp.base_url = os.environ.get('NB_PREFIX')
