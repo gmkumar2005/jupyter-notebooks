@@ -10,7 +10,7 @@ RUN rm -rf /tmp/src/.git* && \
     chmod -R g+w /tmp/src && \
     rm -rf /tmp/scripts && \
     mv /tmp/src/.s2i/bin /tmp/scripts
-
+RUN chown -R root /opt/app-root/src 
 USER 1001
 
 LABEL io.k8s.description="S2I builder for custom Jupyter notebooks." \
