@@ -6,16 +6,16 @@ c.NotebookApp.ip = '0.0.0.0'
 c.NotebookApp.port = port
 c.NotebookApp.open_browser = False
 c.NotebookApp.quit_button = False
+c.NotebookApp.allow_origin='*'
+c.NotebookApp.password=''
+c.NotebookApp.notebook_dir='/home/jovyan'
+c.NotebookApp.token=''     
 
-if os.environ.get('JUPYTERHUB_SERVICE_PREFIX'):
-    c.NotebookApp.base_url = os.environ.get('JUPYTERHUB_SERVICE_PREFIX')
 
-password = os.environ.get('JUPYTER_NOTEBOOK_PASSWORD')
-if password:
-    import notebook.auth
-    c.NotebookApp.password = notebook.auth.passwd(password)
-    del password
-    del os.environ['JUPYTER_NOTEBOOK_PASSWORD']
+if os.environ.get('NB_PREFIX'):
+    c.NotebookApp.base_url = os.environ.get('NB_PREFIX')
+ 
+ 
 
 image_config_file = '/opt/app-root/src/.jupyter/jupyter_notebook_config.py'
 
